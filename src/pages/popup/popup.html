@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Open-Source Redirector</title>
+        <link rel="stylesheet" href="../styles/popup.css" />
+        <script type="module" src="./popup.js" defer></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="container__nav nav">
+                <h2 class="container__header nav__header">
+                    Open-Source Redirector
+                </h2>
+                <a class="nav__icon" href="../settings/settings.html">
+                    <img
+                        src="../../assets/icons/Settings.svg"
+                        alt="Settings"
+                        title="Settings"
+                    />
+                </a>
+            </div>
+            <div class="container__content content">
+                <div class="content__left">
+                    <div class="content__power" id="programToggler">
+                        <!-- <img src="../../assets/icons/PowerOn.svg" alt="" /> -->
+                    </div>
+                </div>
+                <div class="content__right">
+                    <div class="content__text">Total Redirects:</div>
+                    <div class="content__redirects" id="redirects">0</div>
+                </div>
+            </div>
+            <div class="container__version container__unimportant">
+                Version:
+                <span id="version" class="container__unimportant">1.0.0</span>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,56 @@
+@import url(https://fonts.googleapis.com/css?family=Rubik+One);
+
+$primary-color: rgb(96, 221, 238);
+$bg-color: rgb(34, 34, 34);
+$bg-color-secondary: rgb(51, 51, 51);
+$text-color: rgb(255, 255, 255);
+$text-color-unimportant: rgba(255, 255, 255, 0.5);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik One', Arial, Helvetica, sans-serif;
+    color: $text-color;
+    font-weight: 100;
+}
+
+[class^='js-'],
+[class*=' js-'] {
+    cursor: pointer;
+}
+
+.container {
+    width: 350px;
+    height: 260px;
+    padding: 1em;
+
+    &__nav {
+        height: 32px;
+        gap: 13px;
+    }
+
+    &__header {
+        font-size: 18px;
+        white-space: nowrap;
+        width: 273px;
+    }
+
+    &__content {
+        margin-top: 6px;
+    }
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__header {
+        text-transform: uppercase;
+    }
+
+    &__icon {
+        display: flex;
+    }
+}

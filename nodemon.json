@@ -1,0 +1,6 @@
+{
+    "delay": 2500,
+    "ext": ".js,.scss",
+    "exec": "npm run dev",
+    "watch": ["src"]
+}

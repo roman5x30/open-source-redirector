@@ -1,0 +1,46 @@
+@import './main.scss';
+
+.container {
+    background-color: $bg-color;
+    position: relative;
+
+    &__version {
+        font-size: 12px;
+        position: absolute;
+        bottom: 16px;
+        right: 16px;
+    }
+
+    &__unimportant {
+        color: $text-color-unimportant;
+    }
+}
+
+.content {
+    display: flex;
+    gap: 9px;
+
+    &__right {
+        width: 159px;
+        height: 173px;
+        position: relative;
+    }
+
+    &__power {
+        cursor: pointer;
+        border-radius: 4px;
+
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.05);
+        }
+    }
+
+    &__text {
+        font-size: 12px;
+    }
+
+    &__redirects {
+        color: $primary-color;
+        font-size: 32px;
+    }
+}

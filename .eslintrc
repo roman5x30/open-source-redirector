@@ -1,0 +1,23 @@
+{
+    "parserOptions": {
+        "ecmaVersion": 2020,
+        "sourceType": "module"
+    },
+    "rules": {
+        "quotes": ["warn", "single"],
+        "semi": ["warn", "never"],
+        "eqeqeq": ["error", "always"],
+        "no-undef": "error",
+        "no-unreachable": "warn",
+        "no-unused-vars": "warn",
+        "no-global-assign": "error",
+        "no-return-assign": "warn",
+        "no-var": "warn",
+        "prefer-const": "warn",
+        "valid-typeof": "error"
+    },
+    "env": {
+        "webextensions": true,
+        "browser": true
+    }
+}

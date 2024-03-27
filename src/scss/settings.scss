@@ -1,0 +1,55 @@
+@import './main.scss';
+
+.container {
+    background-color: $bg-color-secondary;
+    overflow: auto;
+}
+
+.list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding-top: 2px;
+
+    &__item {
+        display: inline-flex;
+        align-items: center;
+        position: relative;
+        font-size: 14px;
+        gap: 16px;
+
+        &:not(:last-child)::before {
+            content: '';
+            display: block;
+            height: 2px;
+            width: 100px;
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            background-image: linear-gradient(
+                to right,
+                $primary-color,
+                rgba($primary-color, 0)
+            );
+        }
+    }
+
+    &__select {
+        background-color: $bg-color;
+        border: 1px solid $primary-color;
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        font-size: 10px;
+        padding: 1px 5px;
+        max-width: 128px;
+        text-overflow: ellipsis;
+        text-align: center;
+
+        &:focus {
+            outline: 0;
+            box-shadow: 0 0 0 1.5px $primary-color;
+        }
+    }
+}

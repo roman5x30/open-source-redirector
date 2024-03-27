@@ -1,0 +1,30 @@
+{
+    "manifest_version": 2,
+    "name": "Open-Source Redirector",
+    "description": "Program to redirect your from proprietary web-services to their open-source alternative.",
+    "version": "1.1.0",
+    "permissions": [
+        "storage",
+        "webRequest",
+        "webRequestBlocking",
+        "<all_urls>"
+    ],
+    "background": {
+        "page": "/pages/background/background.html"
+    },
+    "browser_action": {
+        "browser_style": true,
+        "default_icon": {
+            "32": "/assets/images/32.png",
+            "64": "/assets/images/64.png",
+            "128": "/assets/images/128.png"
+        },
+        "default_title": "Open-Source Redirector",
+        "default_popup": "pages/popup/popup.html"
+    },
+    "icons": {
+        "32": "/assets/images/32.png",
+        "64": "/assets/images/64.png",
+        "128": "/assets/images/128.png"
+    }
+}
