@@ -1,17 +1,33 @@
 # Open-Source Redirector
 
-Program to redirect your from proprietary web-services to their open-source alternative.
+This is a firefox addon to redirect you from proprietary web-sites/applications to their open-sourcer alternative.
 
-Redirect List:
+## Redirect List
 
--   YouTube ➝ Invidious
--   YouTube Music ➝ Hyperpipe
--   Google ➝ SearX
--   Google Translate ➝ Lingva Translate
--   Yahoo ➝ SearX
--   Bing ➝ SearX
--   Reddit ➝ Libreddit
--   Twitter ➝ Nitter
--   Wikipedia ➝ Wikiless
--   Medium ➝ Scribe
--   TikTok ➝ ProxiTok
+-   YouTube -> Invidious
+-   YouTube Music -> Hyperpipe
+-   Google -> SearX
+-   Google Translate -> Lingva Translate
+-   Yahoo -> SearX
+-   Bing -> SearX
+-   Reddit -> Libreddit
+-   Twitter -> Nitter
+-   Wikipedia -> Wikiless
+-   Medium (and TowardsDataScience) -> Scribe
+-   TikTok -> ProxiTok
+
+## How to Build
+
+If you don't have node modules installed, then run:
+
+```
+npm i
+```
+
+Then, run this command:
+
+```
+npm run prod
+```
+
+This script will create `/dist` folder, which will contain compiled build of the extension and `output.zip` that you use to load temporary addon (at this page `about:debugging`), or upload it to the extension market.
