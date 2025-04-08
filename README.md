@@ -15,6 +15,7 @@ This is a firefox addon to redirect you from proprietary web-sites/applications 
 -   Wikipedia -> Wikiless
 -   Medium (and TowardsDataScience) -> Scribe
 -   TikTok -> ProxiTok
+-   Twitch -> SafeTwitch
 
 ## How to Build
 
