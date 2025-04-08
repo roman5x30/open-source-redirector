@@ -11,6 +11,7 @@ import { googleTranslate } from '../../modules/helpers/googleTranslate.js'
 import { medium } from '../../modules/helpers/medium.js'
 import { youtubeMusic } from '../../modules/helpers/youtubeMusic.js'
 import { fandom } from '../../modules/helpers/fandom.js'
+import { twitch } from '../../modules/helpers/twitch.js'
 
 /**
  * This class is used to create a list in settings menu. Also, this class has a constructor method that initializes a property `node` by creating a `<ul>` element with a class name of 'list'.
@@ -170,6 +171,11 @@ class Settings {
             fandom.label,
             this.formatDestinations(fandom.destinations),
             fandom.key
+        )
+        list.addItem(
+            twitch.label,
+            this.formatDestinations(twitch.destinations),
+            twitch.key
         )
 
         $list.appendChild(list.node)

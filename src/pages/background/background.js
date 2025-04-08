@@ -11,6 +11,7 @@ import { googleTranslate } from '../../modules/helpers/googleTranslate.js'
 import { medium } from '../../modules/helpers/medium.js'
 import { youtubeMusic } from '../../modules/helpers/youtubeMusic.js'
 import { fandom } from '../../modules/helpers/fandom.js'
+import { twitch } from '../../modules/helpers/twitch.js'
 
 const helpers = [
     youtubeMusic,
@@ -23,7 +24,8 @@ const helpers = [
     twitter,
     wikipedia,
     medium,
-    fandom
+    fandom,
+    twitch
 ]
 
 browser.webRequest.onBeforeRequest.addListener(
